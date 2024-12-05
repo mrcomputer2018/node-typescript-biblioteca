@@ -31,10 +31,7 @@ export default class Biblioteca {
     cadastrarUsuario(usuario: Pessoa): void {
         this.usuarios.push(usuario);
     }
-
     /* - Métodos:
-    - Cadastro de livros.
-    - Cadastro de usuários.
     - Empréstimos e devoluções.
     - Relatórios. */
 }

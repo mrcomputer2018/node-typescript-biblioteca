@@ -1,3 +1,4 @@
+import ILivro from './interfaces/ILivro';
 import Aluno from './models/Aluno';
 import Professor from './models/Professor';
 
@@ -17,3 +18,12 @@ const professor = new Professor(
 );
 
 console.log(professor.descricao());
+
+const livro: ILivro = {
+    título: "O mundo dos livros",
+    autor: "john secada",
+    gênero: "ficção",
+    estoque: 1000
+}
+
+console.log(livro)
