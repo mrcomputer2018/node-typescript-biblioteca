@@ -1,22 +1,22 @@
 import Pessoa from './Pessoa';
 import ILivro from '../interfaces/ILivro';
 
-type Emprestimo = {
+interface IEmprestimo {
     livro: ILivro;
     usuario: Pessoa;
     data: Date;
 };
 
 export default class Biblioteca {
-    private livros: ILivro[];
-    private usuarios: Pessoa[];
-    private emprestimos: Emprestimo[] = [];
+    private livros: ILivro[] = [];
+    private usuarios: Pessoa[] = [];
+    private emprestimos: IEmprestimo[] = [];
 
     //construtor
     constructor(
         livros: ILivro[],
         usuarios: Pessoa[],
-        emprestimos: Emprestimo[],
+        emprestimos: IEmprestimo[],
     ) {
         this.livros = livros;
         this.usuarios = usuarios;
