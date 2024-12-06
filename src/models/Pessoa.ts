@@ -11,5 +11,10 @@ export default abstract class Pessoa {
         this.endereco = endereco;
     }
 
+    //getters
+    getNome(): string {
+        return this.nome;
+    }
+
     abstract descricao(): string;
 }

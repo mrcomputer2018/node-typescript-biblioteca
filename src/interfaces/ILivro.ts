@@ -1,5 +1,5 @@
 export default interface ILivro {
-    título: string;
+    titulo: string;
     autor: string;
     gênero: string;
     estoque: number;
